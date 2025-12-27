@@ -1,0 +1,212 @@
+
+/* ================================
+   GLOBAL RESET & BASE
+================================ */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background-color: #ffffff;
+    color: #1f2937;
+}
+
+/* ================================
+   HEADER
+================================ */
+.header {
+    background: #1f2937;
+    color: #ffffff;
+    padding: 14px 20px;
+    font-size: 18px;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* ================================
+   LAYOUT
+================================ */
+.main-layout {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* ================================
+   SIDEBAR
+================================ */
+.sidebar {
+    width: 220px;
+    background: #111827;
+    color: #cbd5e1;
+    padding: 15px;
+}
+
+.sidebar h4 {
+    margin-top: 0;
+    color: #ffffff;
+}
+
+.sidebar a {
+    display: block;
+    padding: 8px 10px;
+    margin-bottom: 6px;
+    border-radius: 4px;
+    color: #cbd5e1;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.sidebar a:hover {
+    background: #1f2937;
+    color: #ffffff;
+}
+
+/* ================================
+   CONTENT AREA
+================================ */
+.content {
+    flex: 1;
+    padding: 20px;
+}
+
+/* ================================
+   CARDS
+================================ */
+.card {
+    background: #ffffff;
+    padding: 15px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+}
+
+/* ================================
+   BUTTONS
+================================ */
+.btn {
+    display: inline-block;
+    padding: 6px 12px;
+    background: #2563eb;
+    color: #ffffff;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.btn:hover {
+    background: #1d4ed8;
+}
+
+.btn-danger {
+    background: #dc2626;
+}
+
+.btn-danger:hover {
+    background: #b91c1c;
+}
+
+/* ================================
+   FORMS
+================================ */
+input, select {
+    width: 100%;
+    max-width: 350px;
+    padding: 8px;
+    margin-bottom: 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 4px;
+}
+
+form {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 6px;
+    max-width: 500px;
+}
+
+/* ================================
+   TABLES
+================================ */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #ffffff;
+}
+
+th {
+    background: #2563eb;
+    color: #ffffff;
+    font-weight: 500;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #e5e7eb;
+    text-align: left;
+}
+
+/* ================================
+   STATUS COLORS (PDF MATCH)
+================================ */
+.status-New {
+    color: #dc2626; /* Red */
+    font-weight: 600;
+}
+
+.status-In\ Progress {
+    color: #d97706; /* Orange */
+    font-weight: 600;
+}
+
+.status-Repaired {
+    color: #16a34a; /* Green */
+    font-weight: 600;
+}
+
+.status-Scrap {
+    color: #6b7280; /* Gray */
+    font-weight: 600;
+}
+
+/* ================================
+   KANBAN
+================================ */
+.kanban-board {
+    display: flex;
+    gap: 15px;
+}
+
+.kanban-column {
+    background: #ffffff;
+    border-radius: 6px;
+    padding: 10px;
+    width: 25%;
+}
+
+.kanban-column h3 {
+    text-align: center;
+    margin-top: 0;
+}
+
+.kanban-card {
+    background: #e5e7eb;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    cursor: grab;
+}
+
+/* ================================
+   FOOTER
+================================ */
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #f9fafb;
+    color: #6b7280;
+    margin-top: 20px;
+}

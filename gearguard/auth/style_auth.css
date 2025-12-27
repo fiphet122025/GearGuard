@@ -1,0 +1,177 @@
+/* --- ODOO ENTERPRISE AUTH THEME --- */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+    /* Odoo Official Colors */
+    --odoo-purple: #714B67;
+    --odoo-purple-dark: #503148;
+    --odoo-teal: #017E84;
+    --odoo-teal-hover: #006C70;
+    
+    /* UI Variables */
+    --bg-gradient-start: #714B67;
+    --bg-gradient-end: #362231;
+    --card-bg: #FFFFFF;
+    --text-main: #212529;
+    --text-muted: #666666;
+    --border-color: #E0E0E0;
+    --focus-ring: rgba(113, 75, 103, 0.25);
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    /* Professional Deep Purple Gradient Background */
+    background: linear-gradient(135deg, var(--bg-gradient-start) 0%, var(--bg-gradient-end) 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 20px;
+}
+
+/* --- THE LOGIN CARD --- */
+.auth-card {
+    background: var(--card-bg);
+    width: 100%;
+    max-width: 420px;
+    padding: 40px;
+    border-radius: 8px; /* Odoo uses slightly rounded corners, not full pills */
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25); /* Deep shadow for pop effect */
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Optional: Top Colored Bar for Technician Portal */
+.auth-card.tech-portal {
+    border-top: 5px solid var(--odoo-teal);
+}
+
+/* --- BRANDING --- */
+.auth-brand {
+    font-size: 26px;
+    font-weight: 800;
+    color: var(--odoo-purple);
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    letter-spacing: -0.5px;
+}
+
+.auth-subtitle {
+    color: var(--text-muted);
+    font-size: 15px;
+    margin-bottom: 35px;
+    font-weight: 500;
+}
+
+/* --- FORM ELEMENTS --- */
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text-main);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    font-size: 15px;
+    color: var(--text-main);
+    transition: all 0.2s ease;
+    background: #FAFAFA;
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: var(--odoo-purple);
+    background: #FFFFFF;
+    box-shadow: 0 0 0 4px var(--focus-ring);
+}
+
+/* --- BUTTONS --- */
+.btn-primary {
+    width: 100%;
+    padding: 14px;
+    background: var(--odoo-teal);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    margin-top: 10px;
+}
+
+.btn-primary:hover {
+    background: var(--odoo-teal-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(1, 126, 132, 0.3);
+}
+
+/* --- FOOTER & LINKS --- */
+.auth-footer {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #EEEEEE;
+    font-size: 13px;
+    color: var(--text-muted);
+    line-height: 1.6;
+}
+
+.auth-link {
+    color: var(--odoo-purple);
+    text-decoration: none;
+    font-weight: 700;
+    transition: color 0.2s;
+}
+
+.auth-link:hover {
+    color: var(--odoo-purple-dark);
+    text-decoration: underline;
+}
+
+/* --- ALERTS --- */
+.alert {
+    padding: 12px 15px;
+    border-radius: 6px;
+    font-size: 13px;
+    margin-bottom: 25px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 500;
+}
+
+.alert-danger {
+    background: #FEF2F2;
+    color: #991B1B;
+    border: 1px solid #FCA5A5;
+}
+
+.alert-success {
+    background: #ECFDF5;
+    color: #065F46;
+    border: 1px solid #6EE7B7;
+}
